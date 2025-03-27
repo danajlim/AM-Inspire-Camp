@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>팀 소개</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Jua', sans-serif;
+      padding: 30px;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    h1 span {
+      color: #FFB400;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .card {
+        position : relative;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      min-width: 180px;
+      text-align: center;
+      height: 250px;
+      overflow:hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .hover-reveal, .hover-hide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover .hover-reveal {
+      opacity: 1;
+    }
+
+    .hover-hide {
+      opacity: 1;
+    }
+
+    .card:hover .hover-hide {
+      opacity: 0;
+    }
+
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    .name {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin: 6px 0;
+    }
+
+    .mbti, .hobby, .intro {
+      font-size: 0.9em;
+      margin: 4px 0;
+    }
+
+    .mbti, .hobby {
+      font-weight: 500;
+      color:tan;
+    }
+
+    .hobby{
+        font-weight: 500;
+      color:rgb(179, 145, 101);
+    }
+
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100px;
+        font-weight: lighter;
+        color:lightslategray;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1><span> 🏫 교육 </span>팀을 소개합니다 🏫</h1>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-Owh3rJLGGrWnafZevZoC.Qdzy0P0JXAJy4ukHIqNb.6lc6LksrQBu_YmRwgodl.uelBgm8fS0qdpl7vVBoj.K6tbhYXBDUPkIw6ijSvq.kNxsCad0RQNKB2G0kOTb.png?d=." alt="임지빈" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">임지빈</div>
+        <div class="mbti">MBTI: ISTJ</div>
+        <div class="hobby">취미: 운동</div>
+        <div class="intro">안녕하세요<br>먹는걸 좋아합니다.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="img2.png" alt="이병강" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">이병강</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="https://www.canva.com/design/DAGit5P3P1c/05ooOVfAhwivc3r-BRMcyg/edit?utm_content=DAGit5P3P1c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="정모경" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">정모경</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="img4.png" alt="김민지" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">김민지</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="img5.png" alt="정수연" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">정수연</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-h2cCVQiEIM4lLFGydTUf.aPlQphKGYv93WrQWPhtm.T2QA1xeMQEWa1Vx8MiIL.R-mO0WjmRySf-DdFAMmb.UJy0fOWWJ9sdtdTfnVDz.PV_08I1qT3CsZjiS69oP.p2xnRe01TlCWDJw1JBkr.png?d=." alt="이준섭" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">이준섭</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="img5.png" alt="최홍혁" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">최홍혁</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="img5.png" alt="남윤호" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">남윤호</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="hover-reveal">
+        <img src="https://github.com/user-attachments/assets/8a93228a-3743-40ee-bf1b-cdb388ead60d" alt="이재원" class="profile-img">
+      </div>
+      <div class="hover-hide">
+        <div class="name">이재원</div>
+        <div class="mbti">MBTI: ???</div>
+        <div class="hobby">취미: ???</div>
+        <div class="intro">안녕하세요</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
